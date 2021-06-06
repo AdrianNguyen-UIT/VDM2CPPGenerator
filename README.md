@@ -2,11 +2,16 @@
 * [https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator](https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator)
 * A Formal Specification project at university.
 * This project is capable of generating a **VDM_SL function** ([see notes below](#Note-for-VDM_SL)) to a fully executable C++ solution.
-* Using OpenGL for rendering, [glfw + glad](#Credits) for manipulating OpenGL window, [Dear ImGui](#Credits) for GUI.
+* Using OpenGL for rendering, [glfw + glad](#Credits) for manipulating OpenGL window, [Dear ImGui](#Credits) for GUI and [Premake](#Credits) for generating project.
+* The core parser is inspired by [uliwitness](https://github.com/uliwitness/simpleparser), [link](https://www.youtube.com/user/uliwitness) to his Youtube channel.
 
 ## Instruction
-* Clone or download zip files at [https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator](https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator)
-* Run ***GenProject.bat*** file to generate Visual Stuio 2019 solution.
+* Clone (working with submodules) at [https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator](https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator) or execute these commands **line by line** as below.<br>
+<pre>git clone https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator
+cd VDM2CPPGenerator/
+git submodule init
+git submodule update</pre>
+* Run ***GenProject.bat*** file to generate Visual Studio 2019 solution.
 * You can choose the version of Visual Studio you want by modidying the ***GenProject.bat*** as below.
 * The original of ***GenProject.bat*** looks like this.
 <pre>call vendor\premake\premake5.exe vs2019
@@ -25,6 +30,7 @@ Parse, Update Output Editor Window and Update Token window
 
 
 ## Credits
+* [Premake](https://github.com/premake/premake-core)
 * [glfw](https://github.com/glfw/glfw)
 * [glad](https://github.com/Dav1dde/glad)
 * [Dear ImGui](https://github.com/ocornut/imgui)
