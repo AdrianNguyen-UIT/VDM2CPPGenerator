@@ -2,6 +2,7 @@
 * [https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator](https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator)
 * A Formal Specification project at university.
 * This project is capable of generating a **VDM_SL function** ([see notes below](#Note-for-VDM_SL)) to a fully executable C++ solution.
+* Using OpenGL for rendering, [glfw + glad](#Credits) for manipulating OpenGL window, [Dear ImGui](#Credits) for GUI.
 
 ## Instruction
 * Clone or download zip files at [https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator](https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator)
@@ -13,6 +14,23 @@ PAUSE</pre>
 * Replace *vs2019* with [here](https://premake.github.io/docs/Using-Premake#using-premake-to-generate-project-files)
 
 ## Images
+Start up window
+![Start up window](https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator/blob/main/images/image1.png)
+
+Read Input and Update Input Editor Window
+![Read Input window](https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator/blob/main/images/image2.png)
+
+Parse, Update Output Editor Window and Update Token window
+![Parse window](https://github.com/AdrianNguyen-UIT/VDM2CPPGenerator/blob/main/images/image3.png)
+
+
+## Credits
+* [glfw](https://github.com/glfw/glfw)
+* [glad](https://github.com/Dav1dde/glad)
+* [Dear ImGui](https://github.com/ocornut/imgui)
+* [ImGuiColorTextEdit](https://github.com/BalazsJako/ImGuiColorTextEdit)
+* [spdlog](https://github.com/gabime/spdlog)
+* [IconFontCppHeaders](https://github.com/juliettef/IconFontCppHeaders)
 
 ## Note for VDM_SL
 Because this is a university project for assignment, there are some modifications to the data type keywords and syntaxes to meet the requirements of the instructor.
