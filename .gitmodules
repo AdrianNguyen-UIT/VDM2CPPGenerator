@@ -10,3 +10,6 @@
 [submodule "Dependencies/IconFontCppHeaders"]
 	path = Dependencies/IconFontCppHeaders
 	url = https://github.com/juliettef/IconFontCppHeaders
+[submodule "Dependencies/spdlog"]
+	path = Dependencies/spdlog
+	url = https://github.com/gabime/spdlog
