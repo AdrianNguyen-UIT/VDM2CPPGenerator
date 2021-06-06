@@ -359,9 +359,6 @@ void GUI::ShowMainMenuBar(VDMParser::Parser& parser, bool& openLogWindow, bool& 
 			ImGui::EndMenu();
 		}
 
-		if (ImGui::BeginMenu("About"))
-		{
-		}
 		ImGui::EndMainMenuBar();
 	}
 }
