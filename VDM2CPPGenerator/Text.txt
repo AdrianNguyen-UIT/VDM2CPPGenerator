@@ -1,0 +1,3 @@
+XepLoaiHS  (diem: R) xl: char*
+pre ( (diem>=0) && (diem <=10))
+post

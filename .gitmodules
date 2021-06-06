@@ -1,0 +1,12 @@
+[submodule "Dependencies/imgui"]
+	path = Dependencies/imgui
+	url = https://github.com/AdrianNguyen-UIT/imgui
+[submodule "Dependencies/glfw"]
+	path = Dependencies/glfw
+	url = https://github.com/AdrianNguyen-UIT/glfw
+[submodule "Dependencies/ImGuiColorTextEdit"]
+	path = Dependencies/ImGuiColorTextEdit
+	url = https://github.com/AdrianNguyen-UIT/ImGuiColorTextEdit
+[submodule "Dependencies/IconFontCppHeaders"]
+	path = Dependencies/IconFontCppHeaders
+	url = https://github.com/juliettef/IconFontCppHeaders
