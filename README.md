@@ -54,7 +54,7 @@ Because this is a university project for assignment, there are some modification
 #### VDM_SL (release)
 <pre>SQRTP (x:real) r:real
 pre x >=0
-post r*r = x and r>=0</pre>
+post r*r = x and r >= 0</pre>
 
 #### VDM_SL (in project)
 <pre>SQRTP (x:R) r:R
