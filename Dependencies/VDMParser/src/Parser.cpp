@@ -842,9 +842,7 @@ namespace VDMParser
 
 		std::string identifer = possibleIdentifer->GetText();
 		if (identifer == "true" ||
-			identifer == "false" ||
-			identifer == "TRUE" ||
-			identifer == "FALSE")
+			identifer == "false")
 			return possibleIdentifer;
 
 		--currentToken;

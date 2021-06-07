@@ -304,9 +304,7 @@ namespace VDMParser
 
 		std::string expression = ParseOperatorCallStatement(statement.GetCompoundStatements()[0]);
 		if (expression == "true" ||
-			expression == "false" ||
-			expression == "TRUE" ||
-			expression == "FALSE")
+			expression == "false")
 		{
 			result += "(" + expression + ")";
 		}

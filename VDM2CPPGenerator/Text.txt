@@ -1,18 +1,6 @@
-aNamNhuan   (  nam    :   Z) kq : B    
-pre   (nam>0)
+XepLoaiHS  (diem: R) xl: char*
+pre ( TRUE)
 post 
-( 
-   (kq = FALSE) && (nam%4 !=0)
-) 
-||
-( 
-   (kq = FALSE) && (nam%400 != 0) 
-   && (nam%100=0) 
-) ||
-( 
-   (kq = TRUE) 
-   && (nam%4 = 0) 
-   && (nam%100!=0)
-) 
-||
-( (kq = TRUE) && (nam%400=0))
+((xl="XS") && (diem>=9)) || ((xl="Gioi") &&  (diem>=8) &&  (diem<9))
+     || ((xl="Kha") && (diem>=6.5) &&  (diem<8)) || ((xl="TB") &&  (diem>=5) &&  (diem<6.5))
+|| ((xl="Yeu") && (diem>=3.5) &&  (diem<5)) || ((xl="Kem") &&  (diem<3.5))
