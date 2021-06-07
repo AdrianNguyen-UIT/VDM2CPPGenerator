@@ -1,3 +1,18 @@
-XepLoaiHS  (diem: R) xl: char*
-pre ( (diem>=0) && (diem <=10))
-post
+aNamNhuan   (  nam    :   Z) kq : B    
+pre   (nam>0)
+post 
+( 
+   (kq = FALSE) && (nam%4 !=0)
+) 
+||
+( 
+   (kq = FALSE) && (nam%400 != 0) 
+   && (nam%100=0) 
+) ||
+( 
+   (kq = TRUE) 
+   && (nam%4 = 0) 
+   && (nam%100!=0)
+) 
+||
+( (kq = TRUE) && (nam%400=0))

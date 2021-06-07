@@ -633,6 +633,15 @@ namespace VDMParser
 
 		if (!lhs.has_value())
 		{
+			std::optional<Token> possibleTrueFalseIdentifer = ExpectTrueFalseIdentifer();
+			if (possibleTrueFalseIdentifer.has_value())
+			{
+				Statement boolIdentiferExpression;
+				boolIdentiferExpression.SetStatementType(StatementType::EXPRESSION_BOOL_IDENTIFER);
+				boolIdentiferExpression.SetName(possibleTrueFalseIdentifer->GetText());
+				return boolIdentiferExpression;
+			}
+
 			lhs = ExpectLiterals(func);
 
 			if (ErrorHandler::HasError())
@@ -823,6 +832,23 @@ namespace VDMParser
 			name == "post")
 			return true;
 		return false;
+	}
+
+	std::optional<Token> Parser::ExpectTrueFalseIdentifer()
+	{
+		std::optional<Token> possibleIdentifer = ExpectIdentifier();
+		if (!possibleIdentifer.has_value())
+			return {};
+
+		std::string identifer = possibleIdentifer->GetText();
+		if (identifer == "true" ||
+			identifer == "false" ||
+			identifer == "TRUE" ||
+			identifer == "FALSE")
+			return possibleIdentifer;
+
+		--currentToken;
+		return {};
 	}
 
 	Statement* Parser::FindRightMostStatement(Statement* lhs, size_t rhsPrecedence)

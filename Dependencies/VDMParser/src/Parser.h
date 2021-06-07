@@ -59,6 +59,8 @@ namespace VDMParser
 		bool IsUnaryOperator(const std::string& op);
 		bool IsAssigmentOperator(const std::string& op);
 		bool IsKeyword(const std::string& name);
+		
+		std::optional<Token> ExpectTrueFalseIdentifer();
 
 		Statement* FindRightMostStatement(Statement *lhs, size_t rhsPrecedence);
 		size_t IsOpPrecedence(const std::string& opName);
