@@ -76,7 +76,7 @@ project "VDM2CPPGenerator"
         "opengl32.lib"
     }
     
-    postbuildcommands { "xcopy /Q /E /Y /I %{prj.location}\\resources %{cfg.buildtarget.directory}\\resources" }
+    postbuildcommands { 'xcopy /Q /E /Y /I "%{prj.location}\\resources" "%{cfg.buildtarget.directory}\\resources"' }
 
     filter "system:windows"
         systemversion "latest"
